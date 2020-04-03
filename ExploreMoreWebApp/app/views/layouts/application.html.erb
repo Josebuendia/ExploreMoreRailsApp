@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= yield(:title) %>  Explore More</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    
+    <header class="headSec">
+            <h1>Explore More</h1>
+      
+      <ul>
+       
+        <li><%= link_to "Home", "/" %></li>
+        <li><%= link_to "Contact", contact_path %></li>
+        <li><%= link_to "About", about_path %></li>
+   
+        
+      </ul>
+      
+    </header>
+    <div class="container">
+    <%= yield %>
+    </div>
+    <footer class="foot">
+      
+			<div class="box">
+				<p><strong> COMPANY </strong></p>
+				<ul>
+				<li><a style="color:#c9ab00; font-size:30px;" href="about.html" target="_blank">About</a></li>
+				<li><a style="color:#c9ab00; font-size:30px;" href="tours.html" target="_blank">Tours</a></li>
+				<li><a style="color:#c9ab00; font-size:30px;" href="services.html" target="_blank">Services</a></li>
+				</ul>
+			</div>
+			<div class="box">
+				<p> <strong>SOCIAL</strong></p>
+					<ul>
+					<li><a style="color:#c9ab00; font-size:30px;" href="contact.html" target="_blank">Contact Us</a></li>
+					<li><a style="color:#c9ab00; font-size:30px;" href="blog.html" target="_blank">Blog</a></li>
+					<li><a style="color:#c9ab00; font-size:30px;" href="index.html" target="_blank">Copyright &copy ExploreMore.ie</li>
+					</ul>
+			</div>
+					<p>&nbsp;</p>
+      
+    </footer>
+    
+    
+    
+  </body>
+</html>
