@@ -350,6 +350,7 @@ nav ul li a {
 }
 
 /* Navigation Links - click, hover etc */
+/*
 a:link {
   color: green;
   background-color: transparent;
@@ -463,14 +464,20 @@ input[type=text], select, textarea {
   padding: 5px; /* Some padding */
   /*
   border: 5px solid #ccc; /* Gray border */
+  /*
   border-radius: 10px; /* Rounded borders */
+  /*
   box-sizing: border-box; /* Make sure that padding and width stays in place */
+  /*
   margin-top: 6px; /* Add a top margin */
+  /*
   margin-bottom: 16px; /* Bottom margin */
+  /*
   resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-}
+/*}
 
 /* Style the submit button with a specific background color etc */
+/*
 input[type=submit] {
   background-color: #4CAF50;
   color: white;
@@ -481,11 +488,13 @@ input[type=submit] {
 }
 
 /* When moving the mouse over the submit button, add a darker green color */
+/*
 input[type=submit]:hover {
   background-color: #45a049;
 }
 
 /* Add a background color and some padding around the form */
+/*
 .container {
   display: block;
   text-align: center;
@@ -530,15 +539,18 @@ input[type=submit]:hover {
 
 #mainContent #bannerImage img {
 	/* Banner image */
+	/*
 	width: 100%;
 }
 #sidebar #NCIimage img {
 	/* Sidebar Image */
+	/*
 	width: 100%;
 	float: left;
 }
 #mainwrapper header nav a {
 	/* Links in header */
+	/*
 	color: rgba(146,146,146,1.00);
 	text-decoration: none;
 }*/
