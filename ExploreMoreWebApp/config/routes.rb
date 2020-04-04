@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'cart/index'
   resources :products
   resources :items
  root 'static_pages#home'
@@ -6,6 +7,12 @@ Rails.application.routes.draw do
  get '/about' =>'static_pages#about'
  get '/contact' => 'static_pages#contact'
  
+ get '/login' => 'user#login' 
+ get '/logout' => 'user#logout'
+
+ get '/cart/:id', to: 'cart#add'
+ get '/clearcart', to: 'cart#clearCart'
+
  
  
  # get 'static_pages/home'
