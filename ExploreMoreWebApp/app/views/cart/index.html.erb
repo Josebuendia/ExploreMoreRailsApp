@@ -1,23 +1,36 @@
-<h1>Cart#index</h1>
-<p>Find me in app/views/cart/index.html.erb</p>
+
  <% if @cart.empty? %>
 <p>You have not added any items yet</p>
 <% end %>
+
+
+
+
 
 <p id="notice"><%= notice %></p>
 <div id="itemsContainer">
     <table id="customers">
         <% total = 0 %>
         <% @cart.each do |id, quantity| %>
+        
           <% item = Item.find_by_id(id) %>
          <tr>
             <td>
                 <div class="image">
-<%= link_to item.title, item %>
+                    <%= link_to item.title, item %>
                 </div>
                 </td>
+                
+                <td>
+                    <a href="/cart/remove/<%= item.id %>">Remove From Cart</a>
+                          <a href="/cart/decrease/<%= item.id %>">Decrease</a>
+
+ 
+
+                </td>
         </tr>
+        <%end%>
     </table>
       </div>
-
-
+ <p><a href="/items" class="button">Continue Shopping</a></p>
+      <a href="/clearcart" class="button">Empty Cart</a>
