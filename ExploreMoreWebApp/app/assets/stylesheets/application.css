@@ -1,5 +1,6 @@
 .headSec {
-   /* background: url("/assets/site/cliffs.png");*/
+   /* background: url("/assets/site/cliffs.png");*= require cookieconsent
+*/
     min-height:10px;
 
     background-color: #0C7C31;
@@ -18,8 +19,10 @@
 }
 
 .Celtictext{
-    /*color:#c9ab00;*/
-    /*font-family: Celtic;*/
+    /*color:#c9ab00;*= require cookieconsent
+*/
+    /*font-family: Celtic;*= require cookieconsent
+*/
  font-family: Celtic;
 }
 
@@ -189,7 +192,8 @@ input[type=submit]:hover {
 }
 
 
-/*contact Css*/
+/*contact Css*= require cookieconsent
+*/
 /*
 @charset "UTF-8";
 @font-face {
@@ -207,7 +211,8 @@ background-size: 100%;
 }
 
 #mainwrapper header {
-    /*Header */
+    /*Header *= require cookieconsent
+*/
     /*
     background-color: rgba(0,0,0,1.00);
     overflow: auto;
@@ -216,7 +221,8 @@ background-size: 100%;
     font-weight: 400;
 }
 #mainwrapper header #logo {
-	/* Company Logo text */
+	/* Company Logo text *= require cookieconsent
+*/
 	/*
 	width: 28%;
 	float: left;
@@ -226,7 +232,8 @@ background-size: 100%;
 	color: rgba(146,146,146,1.00);
 }
 #mainwrapper header nav {
-	/*Nav bar containing links */
+	/*Nav bar containing links *= require cookieconsent
+*/
 	/*
 	text-align: right;
 	padding-top: 30px;
@@ -237,7 +244,8 @@ background-size: 100%;
 	color: rgba(146,146,146,1.00);
 }
 header nav a {
-	/* Links in header */
+	/* Links in header *= require cookieconsent
+*/
 /*
 padding-right: 2%;
 }
@@ -253,7 +261,8 @@ padding-right: 2%;
     text-align: center;
 }
 #content #mainContent #bannerImage {
-	/*Main banner image container */
+	/*Main banner image container *= require cookieconsent
+*/
 	/*
 	width: 100%;
 	background-color: rgba(208,207,207,1.00);
@@ -324,7 +333,8 @@ padding-right: 2%;
 }
 
 #mainContent {
-    /* Container for the content */
+    /* Container for the content *= require cookieconsent
+*/
     /*
     padding-left: 2%;
     width: 71%;
@@ -353,7 +363,8 @@ padding-right: 2%;
 }
 
 #content #sidebar #NCIimage {
-	/* Container for Image in sidebar */
+	/* Container for Image in sidebar *= require cookieconsent
+*/
 	/*
 	width: 100%;
 	background-color: rgba(208,207,207,1.00);
@@ -374,7 +385,8 @@ nav ul li a {
 	text-decoration: none;
 }
 
-/* Navigation Links - click, hover etc */
+/* Navigation Links - click, hover etc *= require cookieconsent
+*/
 /*
 a:link {
   color: green;
@@ -397,13 +409,16 @@ a:active {
   text-decoration: underline;
 }
 
-/*SLIDESHOW FOR TOP OF PAGE UNDER NAVBAR*/
+/*SLIDESHOW FOR TOP OF PAGE UNDER NAVBAR*= require cookieconsent
+*/
 
-/*SLIDESHOW BANNER*/
+/*SLIDESHOW BANNER*= require cookieconsent
+*/
 /*
 * {box-sizing:border-box}
 
-/* Slideshow container */
+/* Slideshow container *= require cookieconsent
+*/
 /*
 .slideshow-container {
   max-width: auto;
@@ -411,13 +426,15 @@ a:active {
   margin: auto;
 }
 
-/* Hide the images by default */
+/* Hide the images by default *= require cookieconsent
+*/
 /*
 .mySlides {
   display: none;
 }
 
-/* Next & previous buttons */
+/* Next & previous buttons *= require cookieconsent
+*/
 /*
 .prev, .next {
   cursor: pointer;
@@ -434,20 +451,23 @@ a:active {
   user-select: none;
 }
 
-/* Position the "next button" to the right */
+/* Position the "next button" to the right *= require cookieconsent
+*/
 /*
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
+/* On hover, add a black background color with a little bit see-through *= require cookieconsent
+*/
 /*
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
 }
 
-/* Caption text */
+/* Caption text *= require cookieconsent
+*/
 /*
 .text {
   color: #f2f2f2;
@@ -459,7 +479,8 @@ a:active {
   text-align: center;
 }
 
-/* The dots/bullets/indicators */
+/* The dots/bullets/indicators *= require cookieconsent
+*/
 /*
 .dot {
   cursor: pointer;
@@ -472,7 +493,8 @@ a:active {
   transition: background-color 0.6s ease;
 }
 
-/* Fading animation */
+/* Fading animation *= require cookieconsent
+*/
 /*
 .fade {
   animation-name: fade;
@@ -480,28 +502,39 @@ a:active {
 }
 
 
-/*QUERYFORM*/
-/* Style inputs with type="text", select elements and textareas */
+/*QUERYFORM*= require cookieconsent
+*/
+/* Style inputs with type="text", select elements and textareas *= require cookieconsent
+*/
 /*
 input[type=text], select, textarea {
-  width: 100%; /* Full width */
+  width: 100%; /* Full width *= require cookieconsent
+*/
   /*
-  padding: 5px; /* Some padding */
+  padding: 5px; /* Some padding *= require cookieconsent
+*/
   /*
-  border: 5px solid #ccc; /* Gray border */
+  border: 5px solid #ccc; /* Gray border *= require cookieconsent
+*/
   /*
-  border-radius: 10px; /* Rounded borders */
+  border-radius: 10px; /* Rounded borders *= require cookieconsent
+*/
   /*
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  box-sizing: border-box; /* Make sure that padding and width stays in place *= require cookieconsent
+*/
   /*
-  margin-top: 6px; /* Add a top margin */
+  margin-top: 6px; /* Add a top margin *= require cookieconsent
+*/
   /*
-  margin-bottom: 16px; /* Bottom margin */
+  margin-bottom: 16px; /* Bottom margin *= require cookieconsent
+*/
   /*
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) *= require cookieconsent
+*/
 /*}
 
-/* Style the submit button with a specific background color etc */
+/* Style the submit button with a specific background color etc *= require cookieconsent
+*/
 /*
 input[type=submit] {
   background-color: #4CAF50;
@@ -512,13 +545,15 @@ input[type=submit] {
   cursor: pointer;
 }
 
-/* When moving the mouse over the submit button, add a darker green color */
+/* When moving the mouse over the submit button, add a darker green color *= require cookieconsent
+*/
 /*
 input[type=submit]:hover {
   background-color: #45a049;
 }
 
-/* Add a background color and some padding around the form */
+/* Add a background color and some padding around the form *= require cookieconsent
+*/
 /*
 .container {
   display: block;
@@ -563,19 +598,23 @@ input[type=submit]:hover {
 
 
 #mainContent #bannerImage img {
-	/* Banner image */
+	/* Banner image *= require cookieconsent
+*/
 	/*
 	width: 100%;
 }
 #sidebar #NCIimage img {
-	/* Sidebar Image */
+	/* Sidebar Image *= require cookieconsent
+*/
 	/*
 	width: 100%;
 	float: left;
 }
 #mainwrapper header nav a {
-	/* Links in header */
+	/* Links in header *= require cookieconsent
+*/
 	/*
 	color: rgba(146,146,146,1.00);
 	text-decoration: none;
-}*/
+}*= require cookieconsent
+*/
