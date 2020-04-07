@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   get 'cart/index'
   resources :products
   resources :items
@@ -13,6 +14,9 @@ Rails.application.routes.draw do
 get '/cart/:id', to: 'cart#add'
   get '/clearcart', to: 'cart#clearCart'
   get '/cart/remove/:id' => 'cart#remove'
+  
+  root :to => 'site#home'
+  
   get '/cart/decrease/:id' => 'cart#decrease'
  
 
