@@ -25,7 +25,6 @@ end
     end
      #Taking us to cart index[view] page
     redirect_to :action => :index
-   
 end
 
 def add
@@ -50,7 +49,27 @@ def add
   
 end
 
- 
+  def clearCart
+    #sets session variable to nil and bring back to index
+    session[:cart] = nil
+    redirect_to :action => :index
+  end 
+
+ def remove
+    
+    id = params[:id]
+    cart = session[:cart]
+    cart.delete id
+    
+    redirect_to :root
+  end
+
+def clearCart
+    # clear cart and remove all items 
+    session[:cart] = nil
+    redirect_to :action => :index
+    
+end
 
   
   def index
