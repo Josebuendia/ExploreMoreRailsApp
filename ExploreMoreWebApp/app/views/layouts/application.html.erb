@@ -63,7 +63,13 @@ window.cookieconsent.initialise({
         
 
 
-   
+        <% if session[:login] == 1 %> 
+        <li><%= link_to "Admin Logout", logout_path %></li>
+        <% else %>
+        
+        <li><%= link_to "Admin Login", login_path %></li>
+        <% end %>
+  
         
       </ul>
       

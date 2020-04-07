@@ -20,12 +20,11 @@
          <%= link_to 'Show',  item, :class => "button", :role => "button" %>
          <%= link_to 'Edit',  edit_item_path(item), :class => "button", :role => "button" %>
          <%= link_to 'Destroy',  item, method: :delete, data: { confirm: 'Are you sure?' }, :class => "button", :role => "button" %>
-          <a href="/cart/clear" class="button">Clear Cart</a>
+         
          <a href="/cart/<%= item.id %>" class="button">Add To Cart</a>
-         <p><a href="/items" class="button">Continue Shopping</a></p>
-         <a href="/clearcart" class="button">Empty Cart</a>
-         <td><a href="/cart/remove/<%= item.id %>">Remove From Cart</a></td>
-         <a href="/cart/clear" class="button">Clear Cart</a>
+       
+         
+         
        </p>
         
       </div>

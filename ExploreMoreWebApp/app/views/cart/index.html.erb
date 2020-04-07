@@ -30,8 +30,11 @@
 
                 
                 <td>
-                <a href="/cart/remove/<%= item.id %>">Remove From Cart</a>
+                
                 <a href="/cart/decrease/<%= item.id %>">Decrease</a>
+        
+                
+               
 
  
 
@@ -40,7 +43,7 @@
         <% total += quantity * item.price %>
         <%end%>
         <tr>
-            Grang Total: <%= number_to_currency(total, :unit => "€") %>
+            Grand Total: <%= number_to_currency(total, :unit => "€") %>
           </tr>
 
     </table>
