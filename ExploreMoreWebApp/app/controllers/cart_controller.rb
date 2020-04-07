@@ -1,5 +1,5 @@
 class CartController < ApplicationController
-  
+  before_action :authenticate_user!
   def clearCart
     #sets session variable to nil and bring back to index
     session[:cart] = nil
