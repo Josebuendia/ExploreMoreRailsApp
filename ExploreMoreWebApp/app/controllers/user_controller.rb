@@ -1,5 +1,5 @@
 class UserController < ApplicationController
-        def login
+    def login
         session[:login] = 1
         session[:cart] = nil
         flash[:notice] = "Admin Login sucessfull!!"
