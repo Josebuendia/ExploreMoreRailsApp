@@ -29,6 +29,7 @@ window.cookieconsent.initialise({
     "href": "http://cookies.insites.com/about-cookies"
   }
 })});
+
 window.addEventListener("load", function(){
 window.cookieconsent.initialise({
   ....
@@ -40,6 +41,16 @@ window.cookieconsent.initialise({
   ....
   "position": "top",
   "static": true /* if top (pushdown) only */
+  ....
+})});
+
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  ....
+  "type": "opt-in",
+  "content": {
+    "allow": "Allow cookies"
+  }
   ....
 })});
 
