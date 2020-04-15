@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'orderitems/index'
+  get 'orderitems/show'
+  get 'orderitems/new'
+  get 'orderitems/edit'
   resources :orders
   devise_for :users
   get 'cart/index'
