@@ -60,22 +60,15 @@ window.cookieconsent.initialise({
         <li><%= link_to "Log Out",   logout_path %></li>
         <li><%= link_to "Cart",      cart_path %></li>
         <li><%= link_to "View Cart", "/cart" %></li>
-                          <% if user_signed_in? %>
-                  
+<% if user_signed_in? %>
+                 <li><a href="#">Hi <%= current_user.email %></a></li>
                  <li><%= link_to 'Edit Profile', edit_user_registration_path %></li>
+                <%#  <li><%= link_to "View Orders", orders_path  %></li>
                  <li><%= link_to 'Sign out', destroy_user_session_path, :method => :delete %></li>
           <% else %>
-                 <li><%= link_to 'Register', new_user_registration_path %></li> 
+                 <li><%= link_to 'Register', new_user_registration_path %></li>
                  <li><%= link_to 'Sign in', new_user_session_path %></li>
           <% end %>
-
-                          <% if user_signed_in? %>
-                 <li>Signed in as... <%= current_user.email %></a></li>
-                 <li><%= link_to 'Sign out', destroy_user_session_path, :method => :delete %></li>
-          <% else %>
-                 <li><%= link_to 'Register', new_user_registration_path %></li> 
-                 <li><%= link_to 'Sign in', new_user_session_path %></li>
-          <% end %> 
 
 
 
