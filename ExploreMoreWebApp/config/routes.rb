@@ -3,7 +3,10 @@ Rails.application.routes.draw do
   get 'orderitems/show'
   get 'orderitems/new'
   get 'orderitems/edit'
-  resources :orders
+  resources :orders do 
+    resources:orderitems
+  end
+
   devise_for :users
   get 'cart/index'
   resources :products
