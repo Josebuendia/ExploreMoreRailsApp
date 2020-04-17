@@ -1,6 +1,6 @@
 <div class="mainCont">
     <%=image_tag("cliffs.png", :class=> "welcomeIm") %>
-    
+    <%provide(:title, "Home")%>
     <h1>Home Page</h1>
     
     <p>Hello Come explore more with ExploreMore!</p>
@@ -37,6 +37,6 @@
 				</tbody>
 			</table>
     
-    
+   <%=render 'layouts/categories'%> 
+   <%=render 'layouts/popular'%>
 </div>
-<%=render 'layouts/popular'%>

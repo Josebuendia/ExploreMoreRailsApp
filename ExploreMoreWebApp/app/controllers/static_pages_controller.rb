@@ -1,5 +1,6 @@
 class StaticPagesController < ApplicationController
   def home
+    @categories = Category.all
   end
 
   def help
@@ -15,5 +16,10 @@ class StaticPagesController < ApplicationController
     #"Paid by User:#{current_user.id} #{current_user.name} #{current_user.surname}")
     
   end
+  def category
+    catName = params[:title]
+    @items = Item.where("category like ? ", catName)
+  end
+
 
 end

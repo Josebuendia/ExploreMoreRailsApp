@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :categories
   get 'orderitems/index'
   get 'orderitems/show'
   get 'orderitems/new'
@@ -13,6 +14,7 @@ Rails.application.routes.draw do
   
   get '/checkout' => 'cart#createOrder'
   get '/paid/:id' => 'static_pages#paid'
+  get 'category/:title', to: 'static_pages#category'
   get 'cart/index'
   resources :products
   resources :items
