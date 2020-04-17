@@ -24,6 +24,8 @@ Rails.application.routes.draw do
  get '/about' =>'static_pages#about'
  get '/contact' => 'static_pages#contact'
  
+ get '/aboutSend/:id' =>  'static_pages#aboutSend'
+ 
  get '/login' => 'user#login' 
  get '/logout' => 'user#logout'
 
