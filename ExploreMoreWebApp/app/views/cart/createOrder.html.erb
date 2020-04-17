@@ -40,9 +40,36 @@ You have just placed an order <%=@order.id%></h1>
           <td>You Pay &euro; <%= @overall %></td>
       </tr>
 <tr>
-          <td><h2>  <a href="/paid/<%= @order.id %>" class="button">Pay Now</a></h2></td>
+         <!-- <td><h2>  <a href="/paid/<%= @order.id %>" class="button">Pay Now</a></h2></td>-->
+         
+          
       </tr>
 
        
       </tr>
 </table>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+
+  <!-- Identify your business so that you can collect the payments. -->
+  <input type="hidden" name="business" value="ftmoloney@gmail.com">
+
+  <!-- Specify a Buy Now button. -->
+  <input type="hidden" name="cmd" value="_xclick">
+
+  <!-- Specify details about the item that buyers will purchase. -->
+  <input type="hidden" name="item_name" value="Explore More Order Number <%= @orderNum %>">
+  <input type="hidden" name="amount" value="<%= @overall %>">
+  <input type="hidden" name="currency_code" value="EUR">
+
+  <!-- Prompt buyers to enter the quantities they want. -->
+  <input type="hidden" name="undefined_quantity" value="1">
+
+  <!-- Display the payment button. -->
+  <input type="image" name="submit" border="0"
+    src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_LG.gif"
+    alt="Buy Now">
+  <img alt="" border="0" width="1" height="1"
+    src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" >
+    <input type="hidden" name="return" value="https://bdc034d6accd4c2e8158bb8dc2cdc2ba.vfs.cloud9.us-east-1.amazonaws.com/" >
+
+</form>
