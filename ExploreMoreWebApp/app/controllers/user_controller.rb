@@ -12,6 +12,15 @@ class UserController < ApplicationController
         flash[:notice] = "You have been successfully logged out!!"
         redirect_to :controller => :items
     end    
+  def upgrade_admin
+        @user.update_attribute(:adminrole, true)
+        redirect_to :action => :admin_users
+  end
+    
+  def downgrade_admin
+       @user.update_attribute(:adminrole, false)
+         redirect_to :action => :admin_users
+  end    
     
 
 end
